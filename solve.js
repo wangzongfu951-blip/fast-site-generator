@@ -378,7 +378,7 @@ function headingOf(line) {
   let end = line.length;
   while (end > j) {
     const c = line.charCodeAt(end - 1);
-    if (c === 32 || c !== 9) end--;
+    if (c === 32 || c === 9) end--;
     else break;
   }
   if (end <= j) return null;
